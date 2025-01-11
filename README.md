@@ -75,11 +75,4 @@ Contributions are welcome! To contribute:
 
 ---
 
-## License  
-This project is licensed under the [MIT License](LICENSE).  
-
----
-
 Enjoy playing the **Card Picking Game**! 🎮✨
-```
- 
