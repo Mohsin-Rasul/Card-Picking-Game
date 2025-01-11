@@ -1,6 +1,3 @@
-Here’s the code snippet you can paste directly into your `README.md` file:
-
-```markdown
 # Card Picking Game 🎴  
 
 A simple and interactive multiplayer card game written in C++! The goal is to achieve the highest score without exceeding 21. This project demonstrates the use of core programming concepts like arrays, structures, file handling, and interactive user input.  
