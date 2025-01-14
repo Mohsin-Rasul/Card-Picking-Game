@@ -5,8 +5,8 @@
 #include <fstream>
 using namespace std;
 
-const int TOTAL_CARDS = 52;
-const int MAX_HAND = 11;
+const int totalCards = 52;
+const int maxHand = 11;
 
 struct Card {
     string suit;
@@ -16,10 +16,10 @@ struct Card {
 
 struct Player {
     string name;
-    Card hand[MAX_HAND];
+    Card hand[maxHand];
     int handCount = 0;
     int totalPoints = 0;
-    bool stopped = false; // Indicates if the player has stopped drawing cards
+    bool stopped = false; 
 };
 
 void initializeDeck(Card deck[]) {
@@ -38,7 +38,7 @@ void initializeDeck(Card deck[]) {
 
 void shuffleDeck(Card deck[]) {
     srand(time(0));
-    for (int i = TOTAL_CARDS - 1; i > 0; i--) {
+    for (int i = totalCards - 1; i > 0; i--) {
         int randomIndex = rand() % (i + 1);
         Card temp = deck[i];
         deck[i] = deck[randomIndex];
@@ -61,9 +61,8 @@ void displayCard(const Card& card) {
 void drawCard(Player& player, Card deck[], bool usedCards[], bool isComputer = false) {
     int cardIndex;
     if (isComputer) {
-        // Computer picks a random card
         while (true) {
-            cardIndex = rand() % TOTAL_CARDS;
+            cardIndex = rand() % totalCards;
             if (!usedCards[cardIndex]) {
                 break;
             }
@@ -71,7 +70,6 @@ void drawCard(Player& player, Card deck[], bool usedCards[], bool isComputer = f
         cout << "Computer picked a card." << endl;
     }
     else {
-        // Player picks a card
         while (true) {
             cout << player.name << ", choose a card number (1-52): ";
             cin >> cardIndex;
@@ -82,14 +80,13 @@ void drawCard(Player& player, Card deck[], bool usedCards[], bool isComputer = f
                 break;
             }
         }
-        cardIndex--; // Convert to zero-based index
+        cardIndex--; 
     }
 
     usedCards[cardIndex] = true;
     player.hand[player.handCount++] = deck[cardIndex];
     player.totalPoints += deck[cardIndex].value;
 
-    // Adjust Ace value if total exceeds 21
     if (player.totalPoints > 21) {
         for (int i = 0; i < player.handCount; i++) {
             if (player.hand[i].rank == "Ace" && player.hand[i].value == 11) {
@@ -120,8 +117,8 @@ void saveResult(string result) {
 }
 
 int main() {
-    Card deck[TOTAL_CARDS];
-    bool usedCards[TOTAL_CARDS] = { false };
+    Card deck[totalCards];
+    bool usedCards[totalCards] = { false };
     Player player1, player2;
     player1.name = "Player 1";
     player2.name = "Player 2";
@@ -151,7 +148,6 @@ int main() {
 
         cout << "Game started!" << endl;
 
-        // Player vs Player or Player vs Computer
         while (!player1.stopped || !player2.stopped) {
             if (!player1.stopped) {
                 drawCard(player1, deck, usedCards);
@@ -171,7 +167,7 @@ int main() {
 
             if (!player2.stopped) {
                 if (choice == 1) {
-                    drawCard(player2, deck, usedCards, true); // Computer's turn
+                    drawCard(player2, deck, usedCards, true); 
                     if (player2.totalPoints > 21) {
                         cout << player2.name << " busts! " << player1.name << " wins!" << endl;
                         saveResult(player1.name + " | Win\n" + player2.name + " | Lose");
