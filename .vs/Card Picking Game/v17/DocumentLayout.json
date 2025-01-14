@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|solutionrelative:Card Picking Game\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|solutionrelative:Card Picking Game\\game_results.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DCD0F8A2-6FCA-40F3-B75F-CA7038DC6793}|Card Picking Game\\Card Picking Game.vcxproj|solutionrelative:Card Picking Game\\game_results.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "game_results.txt",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.txt",
+              "RelativeDocumentMoniker": "Card Picking Game\\game_results.txt",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.txt",
+              "RelativeToolTip": "Card Picking Game\\game_results.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-14T06:25:33.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "game_results.csv",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.csv",
+              "RelativeDocumentMoniker": "Card Picking Game\\game_results.csv",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\game_results.csv",
+              "RelativeToolTip": "Card Picking Game\\game_results.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2025-01-14T06:09:56.49Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "Card Picking Game\\main.cpp",
               "ToolTip": "C:\\Users\\DELL\\OneDrive\\Documents\\Sem 1\\ICT Lab\\Projects\\Card Picking Game\\Card Picking Game\\main.cpp",
               "RelativeToolTip": "Card Picking Game\\main.cpp",
-              "ViewState": "AgIAABEBAAAAAAAAAAAswDIBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAHEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-11T17:55:27.848Z",
               "EditorCaption": ""
