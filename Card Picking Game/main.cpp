@@ -212,7 +212,7 @@ int main() {
             }
         }
 
-        cout << "Play again? (1 for Yes, 2 for No): ";
+        cout << "Play again? (1 for yes or 2 for no): ";
         cin >> choice;
         if (choice == 2) break;
     }
