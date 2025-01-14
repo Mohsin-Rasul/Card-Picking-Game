@@ -1,9 +1,5 @@
 ﻿  main.cpp
-C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(27,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(57,51): warning C4566: character represented by universal-character-name '\u2665' cannot be represented in the current code page (1252)
-C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(57,87): warning C4566: character represented by universal-character-name '\u2666' cannot be represented in the current code page (1252)
-C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(58,34): warning C4566: character represented by universal-character-name '\u2663' cannot be represented in the current code page (1252)
-C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(58,42): warning C4566: character represented by universal-character-name '\u2660' cannot be represented in the current code page (1252)
+C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\Card Picking Game\main.cpp(40,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Card Picking Game.vcxproj -> C:\Users\DELL\OneDrive\Documents\Sem 1\ICT Lab\Projects\Card Picking Game\x64\Debug\Card Picking Game.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
