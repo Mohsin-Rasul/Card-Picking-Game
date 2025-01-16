@@ -19,7 +19,7 @@ struct Player {
     Card hand[maxHand];
     int handCount = 0;
     int totalPoints = 0;
-    bool stopped = false; 
+    bool stopped = false;
 };
 
 void initializeDeck(Card deck[]) {
@@ -58,6 +58,15 @@ void displayCard(const Card& card) {
     cout << "+-------------+" << endl;
 }
 
+bool validateInput(int& input) {
+    if (!(cin >> input)) {
+        cin.clear(); // Clear error flag
+        cin.ignore(10000, '\n'); // Discard invalid input
+        return false;
+    }
+    return true;
+}
+
 void drawCard(Player& player, Card deck[], bool usedCards[], bool isComputer = false) {
     int cardIndex;
     if (isComputer) {
@@ -72,15 +81,14 @@ void drawCard(Player& player, Card deck[], bool usedCards[], bool isComputer = f
     else {
         while (true) {
             cout << player.name << ", choose a card number (1-52): ";
-            cin >> cardIndex;
-            if (cardIndex < 1 || cardIndex > 52 || usedCards[cardIndex - 1]) {
+            if (!validateInput(cardIndex) || cardIndex < 1 || cardIndex > 52 || usedCards[cardIndex - 1]) {
                 cout << "Invalid choice or card already used. Try again!" << endl;
             }
             else {
                 break;
             }
         }
-        cardIndex--; 
+        cardIndex--;
     }
 
     usedCards[cardIndex] = true;
@@ -109,7 +117,7 @@ void saveResult(string result) {
         outFile << "Game " << gameNumber++ << endl;
         outFile << result << endl;
         outFile.close();
-        cout << "Result saved to game_results.txt!" << endl;
+        cout << "Result saved to game_results.csv!" << endl;
     }
     else {
         cout << "Failed to save result!" << endl;
@@ -132,7 +140,11 @@ int main() {
     cout << "3 - Exit" << endl;
 
     int choice;
-    cin >> choice;
+    if (!validateInput(choice) || (choice < 1 || choice > 3)) {
+        cout << "Invalid choice. Exiting the game." << endl;
+        return 0;
+    }
+
     if (choice == 3) {
         cout << "Goodbye!" << endl;
         return 0;
@@ -167,7 +179,7 @@ int main() {
 
             if (!player2.stopped) {
                 if (choice == 1) {
-                    drawCard(player2, deck, usedCards, true); 
+                    drawCard(player2, deck, usedCards, true);
                     if (player2.totalPoints > 21) {
                         cout << player2.name << " busts! " << player1.name << " wins!" << endl;
                         saveResult(player1.name + " | Win\n" + player2.name + " | Lose");
@@ -209,8 +221,7 @@ int main() {
         }
 
         cout << "Play again? (1 for yes or 2 for no): ";
-        cin >> choice;
-        if (choice == 2) break;
+        if (!validateInput(choice) || choice == 2) break;
     }
 
     cout << "Thank you for playing!" << endl;
